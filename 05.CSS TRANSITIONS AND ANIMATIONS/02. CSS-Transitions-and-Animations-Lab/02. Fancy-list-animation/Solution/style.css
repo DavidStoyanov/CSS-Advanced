@@ -1,0 +1,107 @@
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+@import url('reset.css');
+@import url('variations.css');
+
+body {
+    max-width: 40rem;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+
+
+ul.nav-list {
+    max-width: 20rem;
+    list-style-type: none;
+}
+
+ul.nav-list a {
+    display: flex;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    justify-content: center;
+    text-decoration: none;
+}
+
+ul.nav-list a i {
+    flex: 0 0 2rem;
+    text-align: center;
+}
+
+ul.nav-list a span {
+    flex: 0 0 8rem;
+}
+
+ul.nav-list a:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+ul.nav-list li {
+    opacity: 0;
+    padding-bottom: 0.5rem;
+    animation: list-animation;
+    animation-duration: var(--duration-animaiton-list);
+    animation-fill-mode: forwards;
+}
+
+ul.nav-list li:nth-child(1) {
+    animation-delay: calc(var(--delay-animaiton-list) * 1);
+}
+
+ul.nav-list li:nth-child(2) {
+    animation-delay: calc(var(--delay-animaiton-list) * 2);
+}
+
+ul.nav-list li:nth-child(3) {
+    animation-delay: calc(var(--delay-animaiton-list) * 3);
+}
+
+ul.nav-list li:nth-child(4) {
+    animation-delay: calc(var(--delay-animaiton-list) * 4);
+}
+
+ul.nav-list li:nth-child(5) {
+    animation-delay: calc(var(--delay-animaiton-list) * 5);
+}
+
+ul.nav-list li:nth-child(6) {
+    animation-delay: calc(var(--delay-animaiton-list) * 6);
+}
+
+ul.nav-list li:nth-child(7) {
+    animation-delay: calc(var(--delay-animaiton-list) * 7);
+}
+
+/* Animations */
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes list-animation {
+    0% {
+        transform: translateX(-2rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

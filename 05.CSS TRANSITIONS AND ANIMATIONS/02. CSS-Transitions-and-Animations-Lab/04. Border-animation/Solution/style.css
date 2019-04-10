@@ -1,0 +1,41 @@
+@import url('reset.css');
+
+html {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(232, 234, 238);
+    max-width: 40rem;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #FFF;
+    color: rgb(45, 45, 45);
+    padding: 1rem 2rem;
+    margin: 0 0.5rem;
+    outline: var(--outline-sz-a) solid rgb(32, 63, 93);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: outline 1s ease-in-out;
+}
+
+a:hover {
+    outline-width: calc(var(--outline-sz-a) * 2.5);
+}
+
+:root {
+    --outline-sz-a: 5px;
+}

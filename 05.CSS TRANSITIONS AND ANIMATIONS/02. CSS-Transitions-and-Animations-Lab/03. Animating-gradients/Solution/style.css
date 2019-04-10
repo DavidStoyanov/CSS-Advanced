@@ -1,0 +1,66 @@
+/*body {*/
+    /*max-width: 50rem;*/
+    /*padding: 4rem;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*div:before,*/
+/*div:after {*/
+    /*display: block;*/
+    /*content: '';*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*position: absolute;*/
+/*}*/
+
+/*div:before {*/
+    /*background-image: linear-gradient(to bottom, rgb(201, 133, 50), rgb(248, 207, 153));*/
+/*}*/
+
+/*div:after {*/
+    /*background-image: linear-gradient(to bottom, rgb(129, 146, 158), rgb(231, 236, 237));*/
+    /*transition: opacity 0.5s ease-out;*/
+/*}*/
+
+/*div:hover:after {*/
+    /*opacity: 0;*/
+/*}*/
+
+body {
+    max-width: 50rem;
+    padding: 4rem;
+    margin: 0 auto;
+}
+
+div:hover:after {
+    animation: switch-gradient;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+div:before,
+div:after {
+    display: block;
+    content: '';
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+div:before {
+    background-image: linear-gradient(to bottom, rgb(201, 133, 50), rgb(248, 207, 153));
+}
+
+div:after {
+    background-image: linear-gradient(to bottom, rgb(129, 146, 158), rgb(231, 236, 237));
+}
+
+@keyframes switch-gradient {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,35 @@
+@import url('reset.css');
+@import url('variables.css');
+@import url('layout.css');
+
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+}
+
+ul {
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.3em;
+    padding: 2em;
+    list-style-type: none;
+}
+
+h3, p {
+    color: var(--primary-color);
+    padding-bottom: 1em;
+}
+
+button {
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: var(--default-color);
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}

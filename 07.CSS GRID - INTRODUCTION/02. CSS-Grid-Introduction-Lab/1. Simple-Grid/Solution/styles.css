@@ -1,0 +1,22 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    padding: 2rem;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1.5em;
+}
+
+.item {
+    background-color: #000;
+    color: #FFF;
+    padding:  1.5em 2em;
+    border-radius: 0.2em;
+}

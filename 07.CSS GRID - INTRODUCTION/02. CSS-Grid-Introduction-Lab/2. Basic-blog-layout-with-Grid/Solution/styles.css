@@ -1,0 +1,44 @@
+:root {
+    --basic-lo-fraction: 9;
+    --basic-content-fraction: 6;
+    --basic-aside-fraction: 3;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    padding: 2rem;
+    margin: 0;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: repeat(var(--basic-lo-fraction), 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.item {
+    background-color: #000;
+    color: #FFF;
+    padding:  1.5em 2em;
+    border-radius: 0.2em;
+}
+
+.site-header {
+    grid-column: 1 / span var(--basic-lo-fraction);
+}
+
+.site-content {
+    grid-column: 1 / span var(--basic-content-fraction);
+}
+
+.site-bar {
+    grid-column: calc(var(--basic-content-fraction) + 1) / span var(--basic-aside-fraction);
+}
+
+.site-footer {
+    grid-column: 1 / span var(--basic-lo-fraction)
+}

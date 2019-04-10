@@ -1,0 +1,8 @@
+html {
+    font-family: PT Sans, sans-serif;
+}
+
+article > header h1,
+section > section h2 {
+    font-size: 2em;
+}

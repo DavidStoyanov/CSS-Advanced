@@ -1,0 +1,41 @@
+div {
+    width: 70%;
+    margin: 0 auto;
+}
+
+article section > section {
+    padding-top: 1.5em;
+}
+
+article section > section ul {
+    padding-left: 2.5em;
+}
+
+header h1 {
+    margin-bottom: 1em;
+}
+
+article section > section h2,
+article section > section p,
+article section > section ul {
+    padding-bottom: 1em;
+}
+
+/* Media */
+@media (min-width: 500px) {
+    html {
+        font-size: var(--mwidth-fs-tablet)
+    }
+}
+
+@media (min-width: 700px) {
+    html {
+        font-size: var(--mwidth-fs-tablet)
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: var(--mwidth-fs-desktop)
+    }
+}
